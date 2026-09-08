@@ -237,7 +237,7 @@
 //   console.log(i);
 //   break;
 //  }
-  
+
 // }
 //continue and break concepts.
 // for (let i = 0; i <= 7; i++) {
@@ -250,5 +250,101 @@
 // let numbers = [1, 2, 3, 4, 5];
 // for (let i = 0; i < numbers.length; i++) {
 //   console.log(numbers[i]);
-  
+
 // }
+//Object Oriented Programming.
+// const student = {
+//   name: "mike",
+//   age: 23,
+//   department: "computer engineering",
+//   location: "america",
+//   university: "harvard",
+//   role: "developer",
+//   introduce(){
+//     console.log(`my name is S${this.name}.`);
+//     console.log(`i'm ${this.age} years old.`);
+//     console.log(`i study ${this.department}.`);
+//     console.log(`and from ${this.location}.`);
+//     console.log(`in ${this.university}.`);
+//     console.log(`my best role is ${this.role}.`);
+//   },
+// };
+// student.introduce();
+// creating an object in javascript.
+// let car={
+//     name:"toyota",
+//     year:"ford",
+//     model:"F-150",
+//     myFunction: function () {
+//         console.log("engine started");
+//         // return this.year;
+//     },
+// };
+// //same thing in arrow function just creating an object on js.
+// let student = {
+//   name: "john",
+//   surName: "alice",
+//   department: "computer engineering",
+//   height: 173,
+//   age: 24,
+//   action: () => {
+//     console.log("code developer");
+//     return this.height;
+//   },
+// };
+// //  console.log(car);
+// console.log(student["height"]);
+// console.log(student.department);
+// console.log(student.action()); //the .action is used for display the text "code developer"!
+// nested objects example how to create and how to access them simply in dot notation.
+// let person={
+//     name:"bianca",
+//     age:37,
+//     nationality:"Ethiopian",
+//     height:157,
+//     address:{
+//         country:"United States",
+//         state:"Virginia",
+//         city:"Alexandria",
+//     },
+// };
+// console.log(person.address.city);
+// creating object on js using constructor.
+// class Person {
+//   constructor(name, email, phone) {
+//     ((this.name = name),
+//       (this.email = email),
+//       (this.phone = phone),
+//       (this.action = function () {
+//         return this.email;
+//       }));
+//   }
+// }
+// const person1 = new Person("james ", "james@test.com", "135790");
+// const person2 = new Person("bianca", "bianca@test.com", "135790");
+// const person3 = new Person("mike", "mike@text.com", "135790");
+// console.log(person1);
+// console.log(person2);
+// console.log(person3);
+class Country {
+  constructor(name, code, state, zone) {
+    ((this.name = name),
+      (this.code = code),
+      (this.state = state),
+      (this.zone = zone),
+      (this.action = function () {
+        return this.state;
+      }));
+  }
+}
+const country1 = new Country("UK", +123, "England", "West");
+const country2 = new Country("US", +234, "Texas", "East");
+const country3 = new Country("China", +456, "Hongkong", "Middle");
+const country4 = new Country("Japan", +251, "Tokyo", "Middle East");
+const country5 = new Country("Russia", +67, "Moscow", "South");
+
+console.log(country1);
+console.log(country2);
+console.log(country3);
+console.log(country4);
+console.log(country5);
