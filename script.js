@@ -326,25 +326,125 @@
 // console.log(person1);
 // console.log(person2);
 // console.log(person3);
-class Country {
-  constructor(name, code, state, zone) {
-    ((this.name = name),
-      (this.code = code),
-      (this.state = state),
-      (this.zone = zone),
-      (this.action = function () {
-        return this.state;
-      }));
-  }
-}
-const country1 = new Country("UK", +123, "England", "West");
-const country2 = new Country("US", +234, "Texas", "East");
-const country3 = new Country("China", +456, "Hongkong", "Middle");
-const country4 = new Country("Japan", +251, "Tokyo", "Middle East");
-const country5 = new Country("Russia", +67, "Moscow", "South");
+// class Country {
+//   constructor(name, code, state, zone) {
+//     ((this.name = name),
+//       (this.code = code),
+//       (this.state = state),
+//       (this.zone = zone),
+//       (this.action = function () {
+//         return this.state;
+//       }));
+//   }
+// }
+// const country1 = new Country("UK", +123, "England", "West");
+// const country2 = new Country("US", +234, "Texas", "East");
+// const country3 = new Country("China", +456, "Hongkong", "Middle");
+// const country4 = new Country("Japan", +251, "Tokyo", "Middle East");
+// const country5 = new Country("Russia", +67, "Moscow", "South");
 
-console.log(country1);
-console.log(country2);
-console.log(country3);
-console.log(country4);
-console.log(country5);
+// console.log(country1);
+// console.log(country2);
+// console.log(country3);
+// console.log(country4);
+// console.log(country5);
+// let nums=[1,2,3,4,5];
+// // nums.pop(4);
+// console.log(nums.pop(2));
+//for each is one of the built-in array objects.
+// let cars = ["Toyota", "BYD", "BMW", "Ford"];
+// cars.forEach(function (cars) {
+//   console.log("i like " + cars);
+// });
+//.map is one of the most important array built-in objects in javascript.
+// let numbers = [1, 2, 3, 4, 5, 6, 7];
+// let doubled = numbers.map((num) => num * 2);
+// console.log(doubled);
+// //*******************/same here for squaring numbers.
+// let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let square = nums.map((x) => x * x);
+// console.log(square);
+// const myNum = Math.floor(Math.random() * 100);
+// console.log(myNum);
+// console.log(document.body.children);
+// console.log(document.childNodes);
+// document.body.style.backgroundColor="purple";
+// let test = document.getElementById("the-three");
+// console.log(test);
+// let test = document.querySelector(".paragraph .two p");
+// console.log(test);
+
+// let test1 = document.querySelector("#second");
+// console.log(test1);
+
+// let testAll = document.querySelectorAll("p");
+// console.log(testAll);
+// const test= document.getElementsByTagName("div")
+// console.log(test);
+//  let man=document.getElementById("the-three")
+//  console.log(man.firstElementChild);
+// let man=document.getElementById("the-three")
+// console.log(man.parentElement);
+// let man=document.getElementById("second")
+// console.log(man.parentElement);
+// let btn = document.getElementById("btn");
+// let btn2 = document.getElementById("btn2");
+// function changeColor() {
+//   btn2.style.fontSize = "40px";
+//   btn2.style.backgroundColor = "coral";
+//   btn2.style.fontFamily = "sansSerif";
+// }
+// btn.addEventListener("click", changeColor);
+// let btn = document.getElementById("btn");
+// let btn2 = document.getElementById("btn2");
+
+// function changeColor() {
+//   if (btn2.style.backgroundColor === "coral") {
+//     // Remove the styles (reset to normal)
+//     btn2.style.fontSize = "";
+//     btn2.style.backgroundColor = "";
+//     btn2.style.fontFamily = "";
+//   } else {
+//     // Apply the changes
+//     btn2.style.fontSize = "40px";
+//     btn2.style.backgroundColor = "coral";
+//     btn2.style.fontFamily = "sans-serif";
+//   }
+// }
+
+// btn.addEventListener("click", changeColor);
+// btn.addEventListener("click", function () {
+//   alert("button clicked!!!")  
+// });
+// selecting elements by ID
+// let dom=document.getElementById("dom-heading");
+// console.log(dom.textContent);
+// // this all is about manipulation but just for example to modify on our browser to the text content to "HELLO JAVASCRIPT"
+// dom.textContent="HELLO JAVASCRIPT!"
+// // selecting elements by class name
+//  const box=document.getElementsByClassName("box")
+// console.log(box[2]);
+// selecting using tag name for the paragraph
+//  let myDiv=document.getElementById("para");
+//  let par=myDiv.getElementsByTagName("p");
+//  console.log(par);
+ 
+// // //  the second alternative is query selector all
+// // let myContainer=document.querySelectorAll("#para p");
+// // console.log(myContainer);
+// //  query selector
+// const boxes=document.querySelectorAll(".box");
+// boxes.forEach(box=>console.log(box));
+//  traversing the DOM
+//  const cars=document.getElementById("car3")
+//  console.log(cars.parentNode);
+// working on children based on parent
+//  const wrapper=document.getElementById("list")
+//  console.log(wrapper.parentElement);
+//  console.log(wrapper.childNodes);
+//  console.log(wrapper.children);
+//  siblings traversing....
+let continent=document.getElementById("am");
+console.log(continent.nextElementSibling);
+console.log(continent.previousElementSibling); //it displays null because noting is located before america!!
+console.log(continent.parentElement.parentElement.id); //it continues wrapping un til the last parent and finally display null on our console!!
