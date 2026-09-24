@@ -444,7 +444,13 @@
 //  console.log(wrapper.childNodes);
 //  console.log(wrapper.children);
 //  siblings traversing....
-let continent=document.getElementById("am");
-console.log(continent.nextElementSibling);
-console.log(continent.previousElementSibling); //it displays null because noting is located before america!!
-console.log(continent.parentElement.parentElement.id); //it continues wrapping un til the last parent and finally display null on our console!!
+// let continent=document.getElementById("am");
+// console.log(continent.nextElementSibling);
+// console.log(continent.previousElementSibling); //it displays null because noting is located before america!!
+// console.log(continent.parentElement.parentElement.id); //it continues wrapping un til the last parent and finally display null on our console!!
+// the three kinds of quotes
+let name="barrows";
+console.log(`Hello ${name}!`);
+let isGreater=44>5;
+console.log(isGreater);
+// 
